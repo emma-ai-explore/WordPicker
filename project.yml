@@ -23,4 +23,4 @@ targets:
       properties:
         LSUIElement: true
         NSAppleEventsUsageDescription: "WordPicker needs access to monitor text selection for translation."
-        NSHumanReadableCopyright: "Copyright © 2024. All rights reserved."
+        NSHumanReadableCopyright: "Copyright © 2026. All rights reserved."
