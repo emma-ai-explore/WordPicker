@@ -1,0 +1,26 @@
+name: WordPicker
+options:
+  bundleIdPrefix: com.wordpicker
+  deploymentTarget:
+    macOS: "14.0"
+
+targets:
+  WordPicker:
+    type: application
+    platform: macOS
+    sources:
+      - WordPicker
+    settings:
+      base:
+        PRODUCT_NAME: WordPicker
+        PRODUCT_BUNDLE_IDENTIFIER: com.wordpicker.WordPicker
+        SWIFT_VERSION: "5.9"
+        MACOSX_DEPLOYMENT_TARGET: "14.0"
+        CODE_SIGN_STYLE: Automatic
+        ENABLE_HARDENED_RUNTIME: YES
+    info:
+      path: WordPicker/Info.plist
+      properties:
+        LSUIElement: true
+        NSAppleEventsUsageDescription: "WordPicker needs access to monitor text selection for translation."
+        NSHumanReadableCopyright: "Copyright © 2024. All rights reserved."
