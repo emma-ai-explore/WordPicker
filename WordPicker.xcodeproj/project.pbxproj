@@ -8,17 +8,83 @@
 
 /* Begin PBXBuildFile section */
 		25E247FFD2FA61DA1D3E53BA /* WordPickerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CDE42B24CA5F2B3D3ABD6F /* WordPickerApp.swift */; };
+		31E8F8FEC7311F6C88D164A6 /* DictService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204445E348D7FBD9C0E4CF49 /* DictService.swift */; };
+		484C8EBF5315DFDFC1D9FE7E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4862232B8C3147682AAFC59 /* SettingsView.swift */; };
+		4B950C06621A5362690B1419 /* Debouncer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BA97820F41685FCBCC72C0 /* Debouncer.swift */; };
+		6925FF51CB0195E46EE8A9F5 /* SelectionMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A085C525E5A3CC71C55C2330 /* SelectionMonitor.swift */; };
+		950DCA514EFFE25255D7C080 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E08F0ED3CA35AD62B98527 /* Constants.swift */; };
+		A210926AB0EEBA9804D57350 /* dict.db in Resources */ = {isa = PBXBuildFile; fileRef = 172D884DEB4C6337E351D5A8 /* dict.db */; };
+		B343B51175BFAD32DD6AE84D /* SQLite.swift in Frameworks */ = {isa = PBXBuildFile; productRef = C8263578000F62D1361CD51B /* SQLite.swift */; };
 		B727C9693B7DE9B1B82898DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB06C9D7EA16256E1E318A3C /* Assets.xcassets */; };
+		BBE16A99237988C33DEBD522 /* FloatWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853BC562E88E4E4D010755DB /* FloatWindowController.swift */; };
+		F7522194CE25E4BCFB94E4EF /* FloatWindowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E746FBEC28D83AA4F881F9 /* FloatWindowView.swift */; };
+		F91DBD49BDCFB22EA66383BF /* WordEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F1BF636B03DC2CF24B69E8 /* WordEntry.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		172D884DEB4C6337E351D5A8 /* dict.db */ = {isa = PBXFileReference; path = dict.db; sourceTree = "<group>"; };
+		204445E348D7FBD9C0E4CF49 /* DictService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictService.swift; sourceTree = "<group>"; };
+		22E08F0ED3CA35AD62B98527 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		58BECC25C517A42A555CA74C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		72BA97820F41685FCBCC72C0 /* Debouncer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debouncer.swift; sourceTree = "<group>"; };
+		853BC562E88E4E4D010755DB /* FloatWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatWindowController.swift; sourceTree = "<group>"; };
+		A085C525E5A3CC71C55C2330 /* SelectionMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionMonitor.swift; sourceTree = "<group>"; };
 		A0CDE42B24CA5F2B3D3ABD6F /* WordPickerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordPickerApp.swift; sourceTree = "<group>"; };
 		BB06C9D7EA16256E1E318A3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D2E746FBEC28D83AA4F881F9 /* FloatWindowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatWindowView.swift; sourceTree = "<group>"; };
 		E0FB706B1A02CB931E8C4672 /* WordPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4862232B8C3147682AAFC59 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		E6F1BF636B03DC2CF24B69E8 /* WordEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordEntry.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFrameworksBuildPhase section */
+		F86282E6A8E5F0E7CD54868F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B343B51175BFAD32DD6AE84D /* SQLite.swift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
 /* Begin PBXGroup section */
+		0C53464F36E0D7E29F6DA411 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E6F1BF636B03DC2CF24B69E8 /* WordEntry.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		42DE5F3F72729D805D3CE794 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				853BC562E88E4E4D010755DB /* FloatWindowController.swift */,
+				D2E746FBEC28D83AA4F881F9 /* FloatWindowView.swift */,
+				E4862232B8C3147682AAFC59 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		689E4084E5F808DE325A29A0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				172D884DEB4C6337E351D5A8 /* dict.db */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8D5820A357084ADC4B203091 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				72BA97820F41685FCBCC72C0 /* Debouncer.swift */,
+				204445E348D7FBD9C0E4CF49 /* DictService.swift */,
+				A085C525E5A3CC71C55C2330 /* SelectionMonitor.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		8E878AAA33DE644CA314DA9B = {
 			isa = PBXGroup;
 			children = (
@@ -27,12 +93,25 @@
 			);
 			sourceTree = "<group>";
 		};
+		8F538DBCCCE7714A580AA783 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				22E08F0ED3CA35AD62B98527 /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		A94A8A85338C0B1B9E347D77 /* WordPicker */ = {
 			isa = PBXGroup;
 			children = (
 				BB06C9D7EA16256E1E318A3C /* Assets.xcassets */,
 				58BECC25C517A42A555CA74C /* Info.plist */,
 				A0CDE42B24CA5F2B3D3ABD6F /* WordPickerApp.swift */,
+				0C53464F36E0D7E29F6DA411 /* Models */,
+				689E4084E5F808DE325A29A0 /* Resources */,
+				8D5820A357084ADC4B203091 /* Services */,
+				8F538DBCCCE7714A580AA783 /* Utilities */,
+				42DE5F3F72729D805D3CE794 /* Views */,
 			);
 			path = WordPicker;
 			sourceTree = "<group>";
@@ -54,6 +133,7 @@
 			buildPhases = (
 				B7CDA2D28532C03CCB102A64 /* Sources */,
 				CF2D02DF0A54C9B7313A8494 /* Resources */,
+				F86282E6A8E5F0E7CD54868F /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -61,6 +141,7 @@
 			);
 			name = WordPicker;
 			packageProductDependencies = (
+				C8263578000F62D1361CD51B /* SQLite.swift */,
 			);
 			productName = WordPicker;
 			productReference = E0FB706B1A02CB931E8C4672 /* WordPicker.app */;
@@ -89,6 +170,9 @@
 			);
 			mainGroup = 8E878AAA33DE644CA314DA9B;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				7EAA21C5E1DF761D2071684D /* XCRemoteSwiftPackageReference "SQLite.swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = D02AD4881126B744A499B95E /* Products */;
 			projectDirPath = "";
@@ -105,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B727C9693B7DE9B1B82898DB /* Assets.xcassets in Resources */,
+				A210926AB0EEBA9804D57350 /* dict.db in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +200,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				950DCA514EFFE25255D7C080 /* Constants.swift in Sources */,
+				4B950C06621A5362690B1419 /* Debouncer.swift in Sources */,
+				31E8F8FEC7311F6C88D164A6 /* DictService.swift in Sources */,
+				BBE16A99237988C33DEBD522 /* FloatWindowController.swift in Sources */,
+				F7522194CE25E4BCFB94E4EF /* FloatWindowView.swift in Sources */,
+				6925FF51CB0195E46EE8A9F5 /* SelectionMonitor.swift in Sources */,
+				484C8EBF5315DFDFC1D9FE7E /* SettingsView.swift in Sources */,
+				F91DBD49BDCFB22EA66383BF /* WordEntry.swift in Sources */,
 				25E247FFD2FA61DA1D3E53BA /* WordPickerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,6 +396,25 @@
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7EAA21C5E1DF761D2071684D /* XCRemoteSwiftPackageReference "SQLite.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.14.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C8263578000F62D1361CD51B /* SQLite.swift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7EAA21C5E1DF761D2071684D /* XCRemoteSwiftPackageReference "SQLite.swift" */;
+			productName = SQLite.swift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BCABFEB6EBF1C857D905546D /* Project object */;
 }

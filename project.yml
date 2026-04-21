@@ -10,6 +10,8 @@ targets:
     platform: macOS
     sources:
       - WordPicker
+    dependencies:
+      - package: SQLite.swift
     settings:
       base:
         PRODUCT_NAME: WordPicker
@@ -24,3 +26,8 @@ targets:
         LSUIElement: true
         NSAppleEventsUsageDescription: "WordPicker needs access to monitor text selection for translation."
         NSHumanReadableCopyright: "Copyright © 2026. All rights reserved."
+
+packages:
+  SQLite.swift:
+    url: https://github.com/stephencelis/SQLite.swift.git
+    from: 0.14.1
