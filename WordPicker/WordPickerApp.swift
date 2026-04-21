@@ -59,7 +59,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     @objc private func openSettings() {
-        NSApp.sendAction(NSNotification.Name("showSettings").rawValue, to: nil, from: nil)
+        NSApp.sendAction(Selector("showSettingsWindow:"), to: nil, from: nil)
     }
 
     @objc private func quit() {

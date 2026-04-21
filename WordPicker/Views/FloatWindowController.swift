@@ -57,7 +57,7 @@ class FloatWindowController: NSWindowController {
         currentEntry = nil
     }
 
-    func isVisible: Bool {
+    var isVisible: Bool {
         return window?.isVisible ?? false
     }
 }
