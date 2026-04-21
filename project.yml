@@ -12,6 +12,7 @@ targets:
       - WordPicker
     dependencies:
       - package: SQLite.swift
+        product: SQLite
     settings:
       base:
         PRODUCT_NAME: WordPicker
